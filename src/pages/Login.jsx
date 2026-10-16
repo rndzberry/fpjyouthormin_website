@@ -1,3 +1,5 @@
+import fpjLogo from "../assets/fpj-logo.jpeg";
+
 function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
@@ -51,10 +53,7 @@ function Login() {
 
         {/* LOGO */}
         <div className="login-logo">
-          <img
-            src="/src/assets/fpj-logo.jpg"
-            alt="FPJ Youth Logo"
-          />
+          <img src={fpjLogo} alt="FPJ Youth Oriental Mindoro Logo" />
         </div>
 
         {/* TITLE */}

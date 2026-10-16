@@ -1,4 +1,5 @@
 import { useState } from "react";
+import fpjLogo from "../assets/fpj-logo.jpeg";
 
 const municipalities = [
   "Baco",
@@ -196,7 +197,13 @@ function Register() {
       <div style={styles.card}>
         {/* HEADER */}
         <div style={styles.header}>
-          <div style={styles.logoCircle}>FPJ</div>
+          <div style={styles.logoCircle}>
+            <img
+              src={fpjLogo}
+              alt="FPJ Youth Oriental Mindoro Logo"
+              style={styles.logoImage}
+            />
+          </div>
 
           <div>
             <h1 style={styles.title}>FPJ YOUTH</h1>
@@ -495,6 +502,13 @@ const styles = {
     fontWeight: "800",
     fontSize: "20px",
     flexShrink: 0,
+  },
+
+  logoImage: {
+    width: "100%",
+    height: "100%",
+    objectFit: "contain",
+    borderRadius: "50%",
   },
 
   title: {
